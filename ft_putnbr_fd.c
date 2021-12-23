@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 static int	ptnbr_abs(int n)
 {
@@ -24,6 +25,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	char	l;
 
+	if (n == 0)
+		write(fd, "0", 1);
 	if (!n)
 		return ;
 	if (n / 10)

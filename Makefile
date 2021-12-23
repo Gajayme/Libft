@@ -2,7 +2,7 @@ NAME	= libft.a
 
 HEADER 	= libft.h
 
-MAN_SOR	=	ft_isalpha.c \
+LIST	=	ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isalnum.c \
 			ft_isascii.c \
@@ -37,7 +37,7 @@ MAN_SOR	=	ft_isalpha.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 
-BON_SOR =	ft_lstnew_bonus.c \
+LIST_B =	ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
 			ft_lstsize_bonus.c \
 			ft_lstlast_bonus.c \
@@ -47,34 +47,28 @@ BON_SOR =	ft_lstnew_bonus.c \
 			ft_lstiter_bonus.c \
 			ft_lstmap_bonus.c \
 
+OBJ	= $(patsubst %.c,%.o,$(LIST))
+OBJ_B	= $(patsubst %.c,%.o,$(LIST_B))
 
-MAN_OBJS	= ${MAN_SOR:.c=.o}
-BON_OBJS	= ${BON_SOR:.c=.o}
+all: $(NAME)
 
+$(NAME):	$(OBJ) $(HEADER)
+		$(AR) $(NAME) $?
 
+%.o : %.c
+		$(GCC) -c $< -o $@ -I$(HEADER)
 GCC		= gcc -Wall -Wextra -Werror
-
 AR 		= ar -rcs
-
 RM 		= rm -f
 
-.c.o:
-		${GCC} -c $< -o ${<:.c=.o} -I${HEADER}
 
-
-$(NAME):	${MAN_OBJS} ${HEADER}
-		${AR} ${NAME} ${MAN_OBJS}
-
-all: ${NAME}
-
-bonus:		${BON_OBJS}
-		${AR} ${NAME} ${BON_OBJS}
-
+bonus:		$(OBJ_B) $(HEADER)
+		$(AR) $(NAME) $?
 clean:
-		${RM} ${MAN_OBJS} ${BON_OBJS}
+		$(RM) $(OBJ) $(OBJ_B)
 
 fclean: 	clean
-			${RM} ${NAME}
+			$(RM) $(NAME)
 
 re: 		fclean all bonus
 
