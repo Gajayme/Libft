@@ -6,9 +6,11 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 13:59:40 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/08 13:59:42 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:46:16 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	neg(char c, int is_neg)
 {

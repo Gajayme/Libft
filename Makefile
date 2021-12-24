@@ -47,29 +47,32 @@ LIST_B =	ft_lstnew_bonus.c \
 			ft_lstiter_bonus.c \
 			ft_lstmap_bonus.c \
 
-OBJ	= $(patsubst %.c,%.o,$(LIST))
-OBJ_B	= $(patsubst %.c,%.o,$(LIST_B))
+RM 		= 	rm -f
 
-all: $(NAME)
+AR 		= 	ar -rcs
+
+GCC		= 	gcc -Wall -Wextra -Werror
+
+OBJ		= 	$(patsubst %.c,%.o,$(LIST))
+
+OBJ_B	= 	$(patsubst %.c,%.o,$(LIST_B))
+
+all: 		$(NAME)
 
 $(NAME):	$(OBJ) $(HEADER)
-		$(AR) $(NAME) $?
+			$(AR) $(NAME) $?
 
-%.o : %.c
-		$(GCC) -c $< -o $@ -I$(HEADER)
-GCC		= gcc -Wall -Wextra -Werror
-AR 		= ar -rcs
-RM 		= rm -f
-
+%.o : %.c 	$(HEADER)
+			$(GCC) -c $< -o $@ -Include$(HEADER)
 
 bonus:		$(OBJ_B) $(HEADER)
-		$(AR) $(NAME) $?
+			$(AR) $(NAME) $?
 clean:
-		$(RM) $(OBJ) $(OBJ_B)
+			$(RM) $(OBJ) $(OBJ_B)
 
 fclean: 	clean
 			$(RM) $(NAME)
 
 re: 		fclean all bonus
 
-.PHONY: bonus all clean fclean re
+.PHONY:		bonus all clean fclean re
