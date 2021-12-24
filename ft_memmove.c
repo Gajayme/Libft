@@ -6,11 +6,11 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:02:34 by gajayme           #+#    #+#             */
-/*   Updated: 2021/12/25 00:48:30 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:54:24 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:04:37 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/10 17:25:55 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:55:54 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {

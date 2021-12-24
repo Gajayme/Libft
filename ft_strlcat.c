@@ -6,11 +6,10 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:04:06 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/13 13:50:51 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:55:34 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t maxlen)

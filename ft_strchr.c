@@ -6,11 +6,11 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:03:07 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/08 14:03:08 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:55:08 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *string, int symbol)
 {

@@ -6,13 +6,11 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:03:03 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/13 18:02:22 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:55:00 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 static void	ram_freeer(char **ptr)
 {

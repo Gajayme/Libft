@@ -6,11 +6,10 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:03:46 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/13 17:50:12 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:55:29 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

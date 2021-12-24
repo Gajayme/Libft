@@ -6,11 +6,10 @@
 /*   By: gajayme <gajayme@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 14:04:55 by gajayme           #+#    #+#             */
-/*   Updated: 2021/10/13 17:51:23 by gajayme          ###   ########.fr       */
+/*   Updated: 2021/12/25 00:56:11 by gajayme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
