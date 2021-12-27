@@ -63,7 +63,7 @@ $(NAME):	$(OBJ) $(HEADER)
 			$(AR) $(NAME) $?
 
 %.o : %.c 	$(HEADER)
-			$(GCC) -c $< -o $@ -Include$(HEADER)
+			$(GCC) -c $< -o $@ -I$(HEADER)
 
 bonus:		$(OBJ_B) $(HEADER)
 			$(AR) $(NAME) $?
